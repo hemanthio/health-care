@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Appointment</title>
+</head>
+<body>
+   <div class="container-3">
+    <div class="navbar">
+        <div class="logo">
+            <h3>Health<span>Hist</span></h3>
+        </div>
+        <div class="nav-link">
+            <ul>
+                <a href="/Dashboard">Dashboard</a>
+                <a href="/Department">Department</a>
+                <a href="/Employees">Employees</a>
+                <a href="/Appointment">Appointment</a>
+            </ul>
+        </div>
+    </div>
+            <div class="row-app">
+                <div class="form-app-1">
+                    <h1 class="heading"> <span>Make an</span> Appointment </h1>
+                </div>
+                <div class="form-app-2">
+
+                    <form action="/Appointment" method="POST">
+                        <div class="inputBox">
+                            <input type="text" placeholder="full name" name="full_name" required>
+                            <input type="text" placeholder="phone" name="phone" required>
+                        </div>
+    
+                        <div class="inputBox">
+                            <input type="email" placeholder="your email" name="email" required>
+                            <input type="date" id="appintment-date" name="appintment_date" required>
+                            <select name="timing" id="">
+                                <option class="appoinment" value="" disabled selected>make an appointment</option>
+                                <option value="09 AM - 11 AM">09 AM - 11 AM</option>
+                                <option value="11 AM - 01 PM">11 AM - 01 PM</option>
+                                <option value="03 PM - 05 PM">03 PM - 05 PM</option>
+                                <option value="06 PM - 09 PM">06 PM - 09 PM</option>
+                            </select>
+                        </div>
+    
+                        <textarea name="diseases" id="text-area" cols="30" rows="10" placeholder="Describe your health issue" required></textarea>
+                        <br>
+                        <!-- <input type="submit" name="" id="submit-app" value="make appointment" class="button"> -->
+                        <button id="submit-app" class="btn btn-login">Submit</button>
+                    </form>
+    
+                </div>
+    
+            </div>
+    
+       
+   </div>
+</body>
+</html>

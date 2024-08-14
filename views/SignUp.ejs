@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container-2">
+        <div class="roww">
+            <form action="/SignUp" class="form" id="register" method="POST">
+                    <h2>Register</h2>
+                   <label for="email">Email Address</label>
+                    <div class="pass-reset">
+                     <input type="email" name="email" class="email" id="emailInput" placeholder="name@email.com" required>
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="pass-reset">
+                        <input type="password" class="password" name="password" id="password" placeholder="**********" required>
+                    </div>
+                    <label for="re-password">Re-Password</label>
+                    <div class="pass-reset">
+                        <input type="password" class="password" name="re_password" id="re-password" placeholder="**********" required>
+                    </div>
+                    <p style="color : red"><%= passcode %></p> 
+                   <button class="btn btn-login">Register</button>
+                    <p>Do you have an account? <a href="/LogIn" id="chnageToLogin">Log In</a></p>
+                </form>
+                <a class="back" href="/" id="changeToHome">Home</a> 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="container-2">
+        <div class="roww">
+            <form action="/LogIn" class="form active" id="login" method="POST">
+                <h2>Login</h2>
+                <label for="email">Email Address</label>
+                <div class="pass-reset">
+                    <input type="email" name="email" class="email" id="emailInput" placeholder="name@email.com" required>
+                </div>
+                <label for="password">Password</label>
+                <div class="pass-reset">
+                    <input type="password" class="password" name="password" id="password" placeholder="**********" required>
+                    <!-- <a href="#" class="reset-password">Reset Password</a> -->
+                </div>
+                <div class="pass-reset remember-box">
+                    <input type="checkbox" name="remember" class="remember" id="remember"><span class="remember-text">Remember Password</span>
+                </div>
+                <button class="btn btn-login">Login</button>
+                <p>Don't have an account? <a href="/SignUp" id="changeToRegister">Sign up</a></p>
+            </form>
+            <a class="back" href="/" id="changeToHome">Home</a>    
+        </div>
+    </div>
+</body>
+</html>
